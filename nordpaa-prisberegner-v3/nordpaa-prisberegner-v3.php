@@ -2,14 +2,15 @@
 /**
  * Plugin Name: Nordpaa Prisberegner v3
  * Description: Prisberegner med moderne UI, PDF-tilbud og lead-opsamling. Shortcode: [nordpaa_prisberegner].
- * Version:     3.2.0
+ * Version:     3.2.2
  * Author:      Nordpaa
  * License:     GPLv2 or later
  * Text Domain: nordpaa-prisberegner
  */
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-define( 'NP_PB_V3_VER', '3.2.0' );
+define( 'NP_PB_V3_VER', '3.2.2' );
+
 define( 'NP_PB_V3_PATH', plugin_dir_path( __FILE__ ) );
 define( 'NP_PB_V3_URL', plugin_dir_url( __FILE__ ) );
 

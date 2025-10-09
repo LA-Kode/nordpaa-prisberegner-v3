@@ -1,7 +1,13 @@
-.np3-admin-wrap{padding:24px}#np3-admin-app{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#0B1220}
+/* Admin UI (v3.2.3) */
+.np3-admin-wrap{padding:24px}
+#np3-admin-app{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#0B1220}
 .np3-admin-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
-.np3-tabs{display:flex;gap:10px}.np3-tab{padding:10px 14px;border-radius:10px;border:1px solid #E3E6ED;background:#F4F6FA;cursor:pointer}.np3-tab.active{background:#0B2650;border-color:#0B2650;color:#fff}
-.np3-actions{display:flex;gap:10px}.np3-btn{padding:10px 14px;border-radius:10px;border:1px solid #E3E6ED;background:#fff;cursor:pointer}.np3-btn.primary{background:#0B2650;border-color:#0B2650;color:#fff}
+.np3-tabs{display:flex;gap:10px}
+.np3-tab{padding:10px 14px;border-radius:10px;border:1px solid #E3E6ED;background:#F4F6FA;cursor:pointer}
+.np3-tab.active{background:#0B2650;border-color:#0B2650;color:#fff}
+.np3-actions{display:flex;gap:10px}
+.np3-btn{padding:10px 14px;border-radius:10px;border:1px solid #E3E6ED;background:#fff;cursor:pointer}
+.np3-btn.primary{background:#0B2650;border-color:#0B2650;color:#fff}
 
 /* Cards */
 .np3-card{background:#fff;border:1px solid #E5E7F1;border-radius:14px;padding:24px;margin-bottom:16px;box-shadow:0 1px 2px rgba(0,0,0,.03)}
@@ -24,10 +30,9 @@
 
 /* Leads table – ekstra luft */
 .np3-leads-card{padding:24px}
-.np3-table{width:100%;border-collapse:separate;border-spacing:0 8px}
+.np3-table{width:100%;border-collapse:separate;border-spacing:0 10px}
 .np3-table--spacious th{font-weight:700;color:#0B1220;padding:12px 14px}
-.np3-table--spacious td{background:#fff;border:1px solid #EEF1F8;border-left:none;border-right:none;padding:12px 14px}
-.np3-table--spacious tr{box-shadow:0 1px 0 #EEF1F8}
+.np3-table--spacious td{background:#fff;border:1px solid #EEF1F8;border-left:none;border-right:none;padding:14px}
 .np3-empty{text-align:center;color:#6B7285;padding:18px}
 
 /* Toast */

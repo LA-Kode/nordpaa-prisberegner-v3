@@ -5,20 +5,18 @@ on:
     types: [published]
 
 permissions:
-  contents: write   # <-- giver GITHUB_TOKEN write-adgang
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      # Pak KUN plugin-mappen (ikke .github/ eller README)
-      - name: Build plugin zip (correct WP structure)
+      - name: Build plugin zip (correct structure)
         run: |
-          cd nordpaa-prisberegner-v3
-          zip -r ../nordpaa-prisberegner-v3.${GITHUB_REF_NAME}.zip .
+          zip -r nordpaa-prisberegner-v3.${GITHUB_REF_NAME}.zip nordpaa-prisberegner-v3
 
       - name: Upload release asset
         uses: softprops/action-gh-release@v2

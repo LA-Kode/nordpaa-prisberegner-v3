@@ -1,0 +1,21 @@
+name: Build WordPress Zip
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Build plugin zip (correct WordPress structure)
+        run: |
+          zip -r nordpaa-prisberegner-v3.${GITHUB_REF_NAME}.zip nordpaa-prisberegner-v3
+
+      - name: Upload release asset
+        uses: softprops/action-gh-release@v2
+        with:
+          files: nordpaa-prisberegner-v3.${{ github.ref_name }}.zip
